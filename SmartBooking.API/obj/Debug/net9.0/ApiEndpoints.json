@@ -1,0 +1,117 @@
+[
+  {
+    "ContainingType": "SmartBooking.API.Controllers.HotelBookingController",
+    "Method": "GetAvailableRooms",
+    "RelativePath": "api/HotelBooking/available-rooms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hotelId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "checkIn",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "checkOut",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "guests",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartBooking.API.Controllers.HotelBookingController",
+    "Method": "CreateBooking",
+    "RelativePath": "api/HotelBooking/book",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "viewModel",
+        "Type": "SmartBooking.API.ViewModels.BookingViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartBooking.API.Controllers.HotelBookingController",
+    "Method": "UpdateBooking",
+    "RelativePath": "api/HotelBooking/booking",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "viewModel",
+        "Type": "SmartBooking.API.ViewModels.UpdateBookingViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartBooking.API.Controllers.HotelBookingController",
+    "Method": "GetByReference",
+    "RelativePath": "api/HotelBooking/reference/{reference}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reference",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartBooking.API.Controllers.HotelBookingController",
+    "Method": "SearchHotelsByName",
+    "RelativePath": "api/HotelBooking/search-hotels",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartBooking.API.Controllers.SystemController",
+    "Method": "Reset",
+    "RelativePath": "api/system/reset",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartBooking.API.Controllers.SystemController",
+    "Method": "Seed",
+    "RelativePath": "api/system/seed",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
